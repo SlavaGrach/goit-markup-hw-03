@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+      crossorigin="anonymous"
+    />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -14,44 +20,46 @@
   <body>
     <!-- Шапка сайта -->
     <header class="header">
-      <nav class="nav">
-        <a href="index.html" class="logo link">
-          <span class="logo-acent">Web</span>Studio
-        </a>
+      <div class="container">
+        <nav class="nav">
+          <a href="index.html" class="logo link">
+            <span class="logo-acent">Web</span>Studio
+          </a>
 
-        <ul class="nav-list list">
-          <li class="nav-list-item">
-            <a href="index.html" class="nav-list-link link">Студия</a>
-          </li>
-          <li class="nav-list-item">
-            <a href="portfolio.html" class="nav-list-link link">Портфолио</a>
-          </li>
-          <li class="nav-list-item">
-            <a href="#" class="nav-list-link link">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-      <address class="address">
-        <ul class="address-list list">
-          <li class="address-list-item">
-            <a
-              href="mailto:info@devstudio.com"
-              class="address-list-link address link"
-              >info@devstudio.com
-            </a>
-          </li>
-          <li class="address-list-item">
-            <a href="tel:+380961111111" class="address-list-link address link"
-              >+38 096 111 11 11
-            </a>
-          </li>
-        </ul>
-      </address>
+          <ul class="nav-list list">
+            <li class="nav-list-item">
+              <a href="index.html" class="nav-list-link link">Студия</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="portfolio.html" class="nav-list-link link">Портфолио</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="#" class="nav-list-link link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="address">
+          <ul class="address-list list">
+            <li class="address-list-item">
+              <a
+                href="mailto:info@devstudio.com"
+                class="address-list-link address link"
+                >info@devstudio.com
+              </a>
+            </li>
+            <li class="address-list-item">
+              <a href="tel:+380961111111" class="address-list-link address link"
+                >+38 096 111 11 11
+              </a>
+            </li>
+          </ul>
+        </address>
+      </div>
     </header>
 
     <main>
       <!-- HERRO -->
-      <section class="hero">
+      <section class="hero container">
         <h1 class="hero-title">
           Эффективные решения<br />
           для вашего бизнеса
@@ -60,7 +68,7 @@
       </section>
 
       <!-- ABOUT -->
-      <section class="about">
+      <section class="about container">
         <h2 class="about-title visually-hidden">Наши преимущества</h2>
         <ul class="about-list">
           <li class="about-list-item list">
@@ -95,7 +103,7 @@
       </section>
 
       <!-- WORK -->
-      <section class="work">
+      <section class="work container">
         <h2 class="work-title">Чем мы занимаемся</h2>
         <ul class="work-list">
           <li class="work-list-item list">
@@ -129,7 +137,7 @@
       </section>
 
       <!-- TEAM -->
-      <section class="team">
+      <section class="team container">
         <h2 class="team-title">Наша команда</h2>
         <ul class="team-list">
           <li class="team-list-item list">
@@ -183,7 +191,7 @@
     </main>
 
     <!-- Футер -->
-    <footer class="footer">
+    <footer class="footer container">
       <p class="footer-logo"><span class="logo-acent">Web</span>Studio</p>
       <address class="footer-adr">
         <ul class="footer-adr-list">
