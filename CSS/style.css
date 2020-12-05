@@ -3,7 +3,7 @@
 /* цвет заголовков #212121*/
 /* цвет акцента #2196F3*/
 /* белый цвет #FFFFFF*/
-/* основной цвет фона* #E5E5E5/
+/* основной цвет фона*#FFFFFF/
 /* дополнительный цвет фона  #F5F4FA*/
 /* ================= COMPONENTS =================*/
 
@@ -13,6 +13,8 @@
   --acent-color: #2196f3;
   --white-color: #ffffff;
   --header-border-color: #ececec;
+  --primary-background-color: #ffffff;
+  --secondary-background-color: #f5f4fa;
 }
 
 .list {
@@ -67,7 +69,15 @@ img {
 }
 
 body {
-  background-color: #e5e5e5;
+  background-color: var(--primary-background-color);
+}
+
+.dark-theme {
+  background-color: #2f303a;
+}
+
+.white-theme {
+  background-color: var(--primary-background-color);
 }
 /* ================= END COMPONENTS =================*/
 
@@ -154,16 +164,10 @@ body {
 
 /* ================= HERO =================*/
 
-.container .hero {
-  background-color: #2f303a;
-  margin-bottom: 95px;
-}
-
-.test-div {
+.hero {
   padding-top: 200px;
-  margin-left: 237px;
-  margin-right: 237px;
   padding-bottom: 200px;
+  text-align: center;
 }
 
 .hero-title {
@@ -174,10 +178,14 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-color);
-  text-align: center;
+  margin-bottom: 20px;
 }
 
 .hero-button {
+  min-width: 200px;
+  height: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 16px;
@@ -185,11 +193,16 @@ body {
   align-items: center;
   letter-spacing: 0.06em;
   color: var(--white-color);
+  background-color: var(--acent-color);
 }
 
 /* ================= END HERO =================*/
 
 /*================= ABOUT =================  */
+
+.about {
+  margin-top: 95px;
+}
 
 .container .about {
   margin-bottom: 95px;
@@ -212,6 +225,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--tile-text-color);
+  margin-bottom: 10px;
 }
 
 .about-list-description {
@@ -228,6 +242,10 @@ body {
 /*================= END ABOUT =================  */
 
 /*================= WORK =================  */
+
+.work {
+  margin-top: 95px;
+}
 
 .container .work {
   margin-bottom: 95px;
@@ -259,7 +277,10 @@ body {
 }
 
 .team {
+  margin-top: 95px;
   padding-top: 95px;
+  padding-bottom: 95px;
+  background-color: var(--secondary-background-color);
 }
 
 .team-list {
@@ -279,8 +300,12 @@ body {
 }
 
 .team-list-item {
+  text-align: center;
   background-color: var(--white-color);
   padding-bottom: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-list-item-img {
@@ -310,10 +335,12 @@ body {
 /*================= FOOTER =================  */
 
 .footer {
-  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-logo {
+  padding-bottom: 20px;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -346,7 +373,8 @@ body {
 
 /*================= PORTFOLI PAGE =================  */
 
-.filters-button {
+.filters-buttons {
+  display: flex;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -360,6 +388,10 @@ body {
 .filters-button:hover {
   color: var(--white-color);
   background-color: var(--acent-color);
+}
+
+.project-list {
+  display: flex;
 }
 
 .project-title {
