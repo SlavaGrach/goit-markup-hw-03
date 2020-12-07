@@ -202,7 +202,7 @@ body {
 /*================= ABOUT =================  */
 
 .about {
-  margin-top: 95px;
+  padding-top: 95px;
 }
 
 .container .about {
@@ -245,7 +245,8 @@ body {
 /*================= WORK =================  */
 
 .work {
-  margin-top: 95px;
+  padding-top: 95px;
+  padding-bottom: 95px;
 }
 
 .container .work {
@@ -272,13 +273,7 @@ body {
 
 /*================= TEAM =================  */
 
-.container .team {
-  background-color: #f5f4fa;
-  margin-bottom: 95px;
-}
-
 .team {
-  margin-top: 95px;
   padding-top: 95px;
   padding-bottom: 95px;
   background-color: var(--secondary-background-color);
@@ -374,8 +369,9 @@ body {
 
 /*================= PORTFOLI PAGE =================  */
 
-.portfolio-main {
-  margin-top: 95px;
+.portfolio-list {
+  padding-top: 95px;
+  padding-bottom: 95px;
 }
 
 .filter-list {
@@ -389,6 +385,7 @@ body {
 }
 
 .filter-button {
+  padding: 6px 22px;
   border-radius: 4px;
   border: 0;
 
@@ -411,7 +408,6 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-bottom: 95px;
 }
 
 .projects-item {
